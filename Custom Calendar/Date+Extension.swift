@@ -64,11 +64,11 @@ extension Date {
         Calendar.current.component(.day, from: endOfMonth)
     }
     
-    var sundayBeforeStart: Date {
-        let startOfMonthWeekday = Calendar.current.component(.weekday, from: startOfMonth)
-        let numberFromPreviousMonth = startOfMonthWeekday - 1
-        return Calendar.current.date(byAdding: .day, value: -numberFromPreviousMonth, to: startOfMonth)!
-    }
+//    var sundayBeforeStart: Date {
+//        let startOfMonthWeekday = Calendar.current.component(.weekday, from: startOfMonth)
+//        let numberFromPreviousMonth = startOfMonthWeekday - 1
+//        return Calendar.current.date(byAdding: .day, value: -numberFromPreviousMonth, to: startOfMonth)!
+//    }
     
     // New to accomodate for different start of week days
     var firstWeekDayBeforeStart: Date {
