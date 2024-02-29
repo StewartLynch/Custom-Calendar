@@ -24,8 +24,8 @@ extension Date {
         //           }
         // Adjusted for the different weekday starts
         var weekdays = calendar.shortWeekdaySymbols
-        if Self.firstDayOfWeek > 1 {
-            for _ in 1..<Self.firstDayOfWeek {
+        if firstDayOfWeek > 1 {
+            for _ in 1..<firstDayOfWeek {
                 if let first = weekdays.first {
                     weekdays.append(first)
                     weekdays.removeFirst()
